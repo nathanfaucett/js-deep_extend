@@ -1,0 +1,31 @@
+{
+  "name": "deep_extend",
+  "version": "0.0.1",
+  "description": "deep extend for the browser and node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/deep_extend.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "deep_extend",
+    "deep_extend.js"
+  ],
+  "author": "Nathan Faucett",
+  "license": "BSD-2-Clause",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jsbeautifier": "^0.2.7",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "is_object": "git://github.com/nathanfaucett/is_object",
+    "keys": "git://github.com/nathanfaucett/keys",
+    "is_array_like": "git://github.com/nathanfaucett/is_array_like"
+  }
+}
