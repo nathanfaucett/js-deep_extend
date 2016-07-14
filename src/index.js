@@ -1,6 +1,6 @@
-var keys = require("keys"),
-    isObject = require("is_object"),
-    isArrayLike = require("is_array_like");
+var keys = require("@nathanfaucett/keys"),
+    isObject = require("@nathanfaucett/is_object"),
+    isArrayLike = require("@nathanfaucett/is_array_like");
 
 
 module.exports = deepExtend;

@@ -1,14 +1,17 @@
 {
-  "name": "deep_extend",
+  "name": "@nathanfaucett/deep_extend",
   "version": "0.0.1",
-  "description": "deep extend for the browser and node.js",
+  "description": "deep extend objects and arrays",
   "repository": {
     "type": "git",
     "url": "https://github.com/nathanfaucett/deep_extend.git"
   },
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 9999 --ui tape -- ./test"
   },
   "keywords": [
     "deep_extend",
@@ -18,14 +21,16 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jsbeautifier": "^0.2.7",
-    "mocha": "^2.1.0"
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2",
+    "zuul": "^3.7.2"
   },
   "dependencies": {
-    "is_object": "git://github.com/nathanfaucett/is_object",
-    "keys": "git://github.com/nathanfaucett/keys",
-    "is_array_like": "git://github.com/nathanfaucett/is_array_like"
+    "@nathanfaucett/is_object": "^0.0.1",
+    "@nathanfaucett/keys": "^0.0.1",
+    "@nathanfaucett/is_array_like": "^0.0.2"
   }
 }
