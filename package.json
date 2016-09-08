@@ -1,6 +1,6 @@
 {
   "name": "@nathanfaucett/deep_extend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "deep extend objects and arrays",
   "repository": {
     "type": "git",

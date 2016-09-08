@@ -46,6 +46,6 @@ function extendArray(a, b) {
         il = b.length - 1;
 
     while (i++ < il) {
-        a[a.length] = b[i];
+        extend(a, i, b[i]);
     }
 }

@@ -7,7 +7,7 @@ tape("should deep extend out with objects members", function(assert) {
     assert.deepEqual(deepExtend({
         name: "Bob",
         age: null,
-        array: [],
+        array: [3],
         object: {
             foo: "bar"
         }
